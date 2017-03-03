@@ -1,0 +1,93 @@
+$dark: #2e3b4e;
+$pink: #e7526b;
+$purple: #8824cd;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif !important;
+}
+
+.btn {
+	background: $purple;
+	border-radius: 15px;
+	color: white;
+	font-weight: 700;
+	border: 0;
+	border-top: 1px solid rgba(white, 0.3);
+	text-transform: none;
+	font-size: 1.5rem;
+	padding: 0rem 3rem;
+	letter-spacing: 0;
+	&:hover {
+		color: inherit;
+	}
+}
+
+#banner {
+	height: 100%;
+	background: url('../images/banner-img.png') center center no-repeat;
+	color: white;
+	background-size: cover;
+	.container, .row {
+		height: 100%;
+	}
+	#banner-content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		height: 100%;
+		text-align: right;
+		h1 {
+			font-weight: 500;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	#banner {
+		.container, .row {
+			height: 100%;
+		}
+		.columns {
+			width: 100%;
+		}
+		#banner-content {
+			align-items: center;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	#banner {
+		#banner-content {
+			h1 {
+				font-size: 4rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	#banner {
+		#banner-content {
+			h1 {
+				font-size: 3.4rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	
+}
+
