@@ -9,33 +9,42 @@ li {
   padding: 0;
   margin: 0; }
 
+h4 {
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
 body {
   font-family: "Open Sans", sans-serif !important;
   position: relative; }
 
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: inherit; }
   a:hover {
     color: inherit; }
 
+img {
+  width: 100%; }
+
 .btn {
   background: #8824cd;
-  border-radius: 15px;
+  border-radius: 18px;
   color: white;
   font-weight: 700;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: none;
   font-size: 1.5rem;
-  padding: 0rem 3rem;
+  padding: 1rem 4rem;
   letter-spacing: 0; }
   .btn:hover {
     color: inherit; }
 
 .row {
   margin-top: 40px; }
+  .row:first-child {
+    margin-top: 0; }
 
 .wrapper {
   height: 100%;
@@ -149,9 +158,6 @@ a {
     bottom: -30px; }
   #features .row:first-child {
     margin-top: 0; }
-  #features .row .feature-heading {
-    font-size: 1.6rem;
-    text-transform: uppercase; }
   #features .row p {
     text-align: justify; }
 
@@ -173,6 +179,100 @@ a {
     font-size: 20px;
     text-transform: none;
     display: inline-block; }
+
+.about-us {
+  display: flex;
+  align-items: center;
+  color: #2e3b4e; }
+  .about-us #about-img-1 {
+    background: url("../images/about-img-2.png") center center no-repeat;
+    background-size: cover; }
+  .about-us #about-img-2 {
+    background: url("../images/about-img-1.png") center center no-repeat;
+    background-size: cover; }
+  .about-us .about-img {
+    min-height: 492px; }
+  .about-us .about-content p {
+    font-size: 20px; }
+    .about-us .about-content p:last-child {
+      font-size: 15px;
+      font-weight: 300; }
+
+#experience {
+  background: url(../images/bg-2.png) center center no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 70px;
+  text-align: center; }
+  #experience .experience-wrapper {
+    background: rgba(136, 36, 205, 0.7);
+    padding: 8rem 0; }
+    #experience .experience-wrapper h2 {
+      font-weight: 400; }
+    #experience .experience-wrapper p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      padding: 0 2rem; }
+
+#blog-post {
+  color: white;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important; }
+  #blog-post .blog-post-wrapper {
+    background: -moz-linear-gradient(top, transparent 0%, transparent 42%, transparent 65%, rgba(46, 59, 78, 0.65) 95%, rgba(46, 59, 78, 0.65) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 42%, transparent 65%, rgba(46, 59, 78, 0.65) 95%, rgba(46, 59, 78, 0.65) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, transparent 42%, transparent 65%, rgba(46, 59, 78, 0.65) 95%, rgba(46, 59, 78, 0.65) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    padding-top: 40rem;
+    padding-bottom: 8rem; }
+    #blog-post .blog-post-wrapper .tag {
+      display: inline-block;
+      border: 2px solid white;
+      border-radius: 30px;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      margin-bottom: 20px;
+      font-weight: 600; }
+    #blog-post .blog-post-wrapper h1 {
+      font-weight: 400; }
+    #blog-post .blog-post-wrapper .author {
+      display: flex;
+      align-items: center; }
+      #blog-post .blog-post-wrapper .author .rounded {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #2e3b4e;
+        border-radius: 100%; }
+      #blog-post .blog-post-wrapper .author h5 {
+        margin: 0;
+        margin-left: 20px;
+        font-weight: 600; }
+
+#contact {
+  background: #e7526b;
+  padding: 5rem 0 10rem 0;
+  color: white; }
+  #contact p {
+    font-weight: 300;
+    font-size: 14px; }
+  #contact a {
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 14px; }
+
+footer {
+  background: #2e3b4e;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px; }
 
 @media (max-width: 1000px) {
   .wrapper #main-header {
@@ -221,13 +321,23 @@ a {
     width: 100%; }
   .wrapper #banner #banner-content {
     align-items: center;
-    text-align: center; } }
+    text-align: center; }
+
+  .about-us {
+    padding: 5rem 0; }
+    .about-us .about-img {
+      display: none; }
+    .about-us .columns {
+      width: 100%; } }
 @media (max-width: 750px) {
   #banner #banner-content h1 {
     font-size: 4rem; } }
 @media (max-width: 550px) {
   .row {
     margin-top: 40px; }
+
+  #blog-post .blog-post-wrapper {
+    padding-top: 20rem; }
 
   #banner #banner-content h1 {
     font-size: 3.4rem; } }
