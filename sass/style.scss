@@ -169,6 +169,7 @@ a {
 	background: $dark;
 	padding: 6.5rem 0;
 	position: relative;
+	border-top: 1px solid rgba(white, 0.1);
 	&:after {
 		content: '';
 		display: block;
@@ -192,6 +193,29 @@ a {
 		p {
 			text-align: justify;
 		}
+	}
+}
+
+#get-started {
+	background: url('../images/bg-1.png') center center no-repeat;
+	background-size: cover;
+	padding: 20rem 0;
+	color: white;
+	text-align: center;
+	p {
+		text-align: justify;
+	}
+	h1 {
+		font-weight: 300;
+	}
+	.btn {
+		background: white;
+		color: $pink;
+		padding: 1.5rem 8rem;
+		border-radius: 30px;
+		font-size: 20px;
+		text-transform: none;
+		display: inline-block;
 	}
 }
 
